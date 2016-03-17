@@ -68,8 +68,11 @@ for i in range(8):
                 # print type(comment)
                 comment_length = len(comment)
                 product_id = item['product_id']
-                rank_id = int(item['rankInfo']['rankId'])
-                rank_name = item['rankInfo']['rankName']
+                try:
+                    rank_id = int(item['rankInfo']['rankId'])
+                    rank_name = item['rankInfo']['rankName']
+                except:
+                    continue
                 # print rank_name
                 # print type(rank_name)
                 comment_like = int(item['comment_like'])
