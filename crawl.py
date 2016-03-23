@@ -9,21 +9,30 @@ import csv
 url = 'http://www.sfbest.com/comments/ajaxPl/'
 
 
-iids = ['15822', '37198', '14108', '25382', '12055', '138382', '54895', '56947']
-refers = ['http://www.sfbest.com/html/products/16/1800015822.html',
-    'http://www.sfbest.com/html/products/44/1800043126.html',
-    'http://www.sfbest.com/html/products/15/1800014108.html',
-    'http://www.sfbest.com/html/products/26/1800025382.html',
-    'http://www.sfbest.com/html/products/13/1800012055.html',
-    'http://www.sfbest.com/html/products/139/1800138382.html',
-    'http://www.sfbest.com/html/products/55/1800054895.html',
-    'http://www.sfbest.com/html/products/190/1800189587.html']
-urlids = ['015822', '043126', '014108', '025382', '012055', '138382', '054895', '189587']
-pagess = [8014, 1491, 3550, 2606, 1064, 1348, 466, 95]
-# pagess = [10, 10, 10, 10, 10, 10, 10, 95]
+# iids = ['15822', '37198', '14108', '25382', '12055', '138382', '54895', '56947']
+# refers = ['http://www.sfbest.com/html/products/16/1800015822.html',
+#     'http://www.sfbest.com/html/products/44/1800043126.html',
+#     'http://www.sfbest.com/html/products/15/1800014108.html',
+#     'http://www.sfbest.com/html/products/26/1800025382.html',
+#     'http://www.sfbest.com/html/products/13/1800012055.html',
+#     'http://www.sfbest.com/html/products/139/1800138382.html',
+#     'http://www.sfbest.com/html/products/55/1800054895.html',
+#     'http://www.sfbest.com/html/products/190/1800189587.html']
+# urlids = ['015822', '043126', '014108', '025382', '012055', '138382', '054895', '189587']
+# pagess = [8014, 1491, 3550, 2606, 1064, 1348, 466, 95]
+iids = ['12909', '15821', '31456', '36262', '172397', '12317']
+refers = ['http://www.sfbest.com/html/products/42/1800041444.html',
+    'http://www.sfbest.com/html/products/16/1800015821.html',
+    'http://www.sfbest.com/html/products/32/1800031456.html',
+    'http://www.sfbest.com/html/products/37/1800036262.html',
+    'http://www.sfbest.com/html/products/187/1800186503.html',
+    'http://www.sfbest.com/html/products/13/1800012317.html']
+urlids = ['041444', '015821', '031456', '036262', '186503', '012317']
+pagess = [21922, 7702, 4929, 3824, 481, 4733]
+# pagess = [10, 10, 10, 10, 10, 10]
 
 
-for i in range(8):
+for i in range(6):
     iid = iids[i]
     filename = urlids[i] + '.csv'
     pages = pagess[i]
